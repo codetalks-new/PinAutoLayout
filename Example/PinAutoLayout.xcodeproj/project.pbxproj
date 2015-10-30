@@ -3,43 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E34BEC01BCCB37900437398 /* BaseLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E34BEBF1BCCB37900437398 /* BaseLayoutViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3E34BEC21BCCBC1000437398 /* LayoutSubviewsVerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E34BEC11BCCBC1000437398 /* LayoutSubviewsVerticalViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3E8638C61BCCE1E6004F41B4 /* PinAutoLayoutTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8638C51BCCE1E6004F41B4 /* PinAutoLayoutTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		3E8638C81BCCEA13004F41B4 /* PinAutoLayoutBaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8638C71BCCEA13004F41B4 /* PinAutoLayoutBaseTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		3EDF994B1BCBE75600554F6F /* LayoutSubviewsHorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF994A1BCBE75600554F6F /* LayoutSubviewsHorizontalViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* ExampleEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ExampleEntriesViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		ABDCCA84276CF1FE187936C6 /* Pods_PinAutoLayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25731381206A9F4A6ACC596 /* Pods_PinAutoLayout_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D5E2DB7C0EFC3C53B074EF3E /* Pods_PinAutoLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1D26EC26DB9A40B3CE67F /* Pods_PinAutoLayout_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = PinAutoLayout;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		10501430486AD91735CF705D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		127E3A711FFDE1CD8E611051 /* Pods-PinAutoLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinAutoLayout_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinAutoLayout_Example/Pods-PinAutoLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3E34BEBF1BCCB37900437398 /* BaseLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLayoutViewController.swift; sourceTree = "<group>"; };
+		3E34BEC11BCCBC1000437398 /* LayoutSubviewsVerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsVerticalViewController.swift; sourceTree = "<group>"; };
+		3E8638C51BCCE1E6004F41B4 /* PinAutoLayoutTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAutoLayoutTestCase.swift; sourceTree = "<group>"; };
+		3E8638C71BCCEA13004F41B4 /* PinAutoLayoutBaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAutoLayoutBaseTestCase.swift; sourceTree = "<group>"; };
+		3EDF994A1BCBE75600554F6F /* LayoutSubviewsHorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsHorizontalViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PinAutoLayout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinAutoLayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ExampleEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleEntriesViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = PinAutoLayout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* PinAutoLayout_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinAutoLayout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		670EC2530DECCB4B3DCB149D /* PinAutoLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PinAutoLayout.podspec; path = ../PinAutoLayout.podspec; sourceTree = "<group>"; };
 		96E1D26EC26DB9A40B3CE67F /* Pods_PinAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinAutoLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7458721A103C99BCD41449 /* Pods-PinAutoLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinAutoLayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinAutoLayout_Tests/Pods-PinAutoLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +78,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3EDF99491BCBE73700554F6F /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				3EDF994A1BCBE75600554F6F /* LayoutSubviewsHorizontalViewController.swift */,
+				3E34BEBF1BCCB37900437398 /* BaseLayoutViewController.swift */,
+				3E34BEC11BCCBC1000437398 /* LayoutSubviewsVerticalViewController.swift */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* PinAutoLayout_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* PinAutoLayout_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,8 +112,9 @@
 		607FACD21AFB9204008FA782 /* Example for PinAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				3EDF99491BCBE73700554F6F /* Examples */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* ExampleEntriesViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -126,8 +135,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				3E8638C51BCCE1E6004F41B4 /* PinAutoLayoutTestCase.swift */,
+				3E8638C71BCCEA13004F41B4 /* PinAutoLayoutBaseTestCase.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -196,11 +206,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = PinAutoLayout_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* PinAutoLayout_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,6 +218,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -222,7 +232,7 @@
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PinAutoLayout" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -358,8 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ExampleEntriesViewController.swift in Sources */,
+				3E34BEC21BCCBC1000437398 /* LayoutSubviewsVerticalViewController.swift in Sources */,
+				3E34BEC01BCCB37900437398 /* BaseLayoutViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				3EDF994B1BCBE75600554F6F /* LayoutSubviewsHorizontalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,19 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				3E8638C61BCCE1E6004F41B4 /* PinAutoLayoutTestCase.swift in Sources */,
+				3E8638C81BCCEA13004F41B4 /* PinAutoLayoutBaseTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* PinAutoLayout_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -421,6 +427,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -439,9 +447,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -465,6 +474,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -479,6 +490,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Release;
 		};
@@ -488,9 +500,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PinAutoLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -500,9 +515,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PinAutoLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
@@ -523,6 +540,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinAutoLayout_Example.app/PinAutoLayout_Example";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -539,6 +557,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinAutoLayout_Example.app/PinAutoLayout_Example";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};

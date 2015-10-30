@@ -8,14 +8,14 @@
 
 import UIKit
 
-public class EdgeConstraints{
+public class PAEdgeConstraints{
     var leading:NSLayoutConstraint?
     var trailing:NSLayoutConstraint?
     var top:NSLayoutConstraint?
     var bottom:NSLayoutConstraint?
 }
 
-public class CenterConstraints{
+public class PACenterConstraints{
     let centerX:NSLayoutConstraint
     let centerY:NSLayoutConstraint
     
@@ -25,54 +25,68 @@ public class CenterConstraints{
     }
 }
 
+public class PASizeConstraints{
+    let width:NSLayoutConstraint
+    let height:NSLayoutConstraint
+    init(width:NSLayoutConstraint,height:NSLayoutConstraint){
+        self.width = width
+        self.height = height
+    }
+}
+
 let PA_DEFAULT_MARGIN : CGFloat = 15
+let PA_DEFAULT_SIBLING_MARGIN : CGFloat = 8
 
 public extension UIView{
     
-    public  func pinTop(margin:CGFloat = PA_DEFAULT_MARGIN) -> NSLayoutConstraint{
+    private func assertHasSuperview(){
         assert(superview != nil, "NO SUPERVIEW")
+    }
+    
+    public  func pinTop(margin:CGFloat = PA_DEFAULT_MARGIN) -> NSLayoutConstraint{
+        assertHasSuperview()
         let c = NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: superview!, attribute: .Top, multiplier: 1.0, constant: margin)
         superview?.addConstraint(c)
         return c
     }
     
     public func pinLeading(margin:CGFloat = PA_DEFAULT_MARGIN) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
+        assertHasSuperview()
         let c = NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: superview!, attribute: .Leading, multiplier: 1.0, constant: margin)
         superview?.addConstraint(c)
         return c
     }
     
     public func pinBottom(margin:CGFloat = PA_DEFAULT_MARGIN) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
+        assertHasSuperview()
         let c = NSLayoutConstraint(item: superview!, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: margin)
         superview?.addConstraint(c)
         return c
     }
     
     public func pinTrailing(margin:CGFloat = PA_DEFAULT_MARGIN) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
+        assertHasSuperview()
         let c = NSLayoutConstraint(item: superview!, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1.0, constant: margin)
         superview?.addConstraint(c)
         return c
     }
     
-    public func pinVertical(margin:CGFloat =  PA_DEFAULT_MARGIN) -> EdgeConstraints{
-        let edgeC = EdgeConstraints()
+    public func pinVertical(margin:CGFloat =  PA_DEFAULT_MARGIN) -> PAEdgeConstraints{
+        let edgeC = PAEdgeConstraints()
         edgeC.top =  pinTop(margin)
         edgeC.bottom =  pinBottom(margin)
         return edgeC
     }
     
-    public func pinHorizontal(margin:CGFloat = PA_DEFAULT_MARGIN) -> EdgeConstraints{
-        let edgeC = EdgeConstraints()
+    public func pinHorizontal(margin:CGFloat = PA_DEFAULT_MARGIN) -> PAEdgeConstraints{
+        let edgeC = PAEdgeConstraints()
         edgeC.leading =  pinLeading(margin)
         edgeC.trailing = pinTrailing(margin)
         return edgeC
     }
     
-    public func pinEdge(margin:UIEdgeInsets) -> EdgeConstraints{
-        let edgeC = EdgeConstraints()
+    public func pinEdge(margin:UIEdgeInsets=UIEdgeInsetsZero) -> PAEdgeConstraints{
+        let edgeC = PAEdgeConstraints()
          edgeC.leading = pinLeading(margin.left)
         edgeC.trailing = pinTrailing(margin.right)
         edgeC.top =  pinTop(margin.top)
@@ -80,23 +94,23 @@ public extension UIView{
         return edgeC
     }
     
-    public func pinTopLeading(top:CGFloat = PA_DEFAULT_MARGIN, leading:CGFloat = PA_DEFAULT_MARGIN) -> EdgeConstraints{
-        let edgeC = EdgeConstraints()
+    public func pinTopLeading(top:CGFloat = PA_DEFAULT_MARGIN, leading:CGFloat = PA_DEFAULT_MARGIN) -> PAEdgeConstraints{
+        let edgeC = PAEdgeConstraints()
         edgeC.top = pinTop(top)
         edgeC.leading = pinLeading(leading)
         return edgeC
     }
     
-    public func pinTopTrailing(top:CGFloat =  PA_DEFAULT_MARGIN,trailing:CGFloat = PA_DEFAULT_MARGIN) -> EdgeConstraints{
-        let edgeC = EdgeConstraints()
+    public func pinTopTrailing(top:CGFloat =  PA_DEFAULT_MARGIN,trailing:CGFloat = PA_DEFAULT_MARGIN) -> PAEdgeConstraints{
+        let edgeC = PAEdgeConstraints()
         edgeC.top = pinTop(top)
         edgeC.trailing = pinTrailing(trailing)
         return edgeC
     }
    
     public func pinBottomLeading(bottom:CGFloat = PA_DEFAULT_MARGIN,
-        leading:CGFloat = PA_DEFAULT_MARGIN) -> EdgeConstraints{
-            let edgeC = EdgeConstraints()
+        leading:CGFloat = PA_DEFAULT_MARGIN) -> PAEdgeConstraints{
+            let edgeC = PAEdgeConstraints()
             edgeC.bottom = pinTop(bottom)
             edgeC.leading = pinLeading(leading)
             return edgeC
@@ -104,83 +118,72 @@ public extension UIView{
     
     
     public func pinBottomTrailing(bottom:CGFloat = PA_DEFAULT_MARGIN,
-        trailing:CGFloat = PA_DEFAULT_MARGIN) -> EdgeConstraints{
-        let edgeC = EdgeConstraints()
+        trailing:CGFloat = PA_DEFAULT_MARGIN) -> PAEdgeConstraints{
+        let edgeC = PAEdgeConstraints()
         edgeC.bottom = pinTop(bottom)
         edgeC.trailing = pinLeading(trailing)
         return edgeC
     }
     
-    
-    
-    
-    public func pinLeadingToSibling(sibling:UIView,withMargin margin:CGFloat = 8) -> NSLayoutConstraint{
+   
+    private func assertIsSibling(sibling:UIView){
         assert(superview != nil, "NO SUPERVIEW")
         assert(superview == sibling.superview, "NOT SIBLING")
-        
+    }
+    
+    
+    public func pinLeadingToSibling(sibling:UIView,margin:CGFloat = PA_DEFAULT_SIBLING_MARGIN) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: sibling, attribute: .Trailing, multiplier: 1.0, constant: margin)
         superview?.addConstraint(c)
         return c
     }
     
-    public func pinTrailingToSibing(sibling:UIView,withMargin margin:CGFloat = 8) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
-        assert(superview == sibling.superview, "NOT SIBLING")
-        
+    public func pinTrailingToSibing(sibling:UIView,margin:CGFloat = PA_DEFAULT_SIBLING_MARGIN) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute:.Trailing , relatedBy: .Equal, toItem: sibling, attribute: .Leading, multiplier: 1.0, constant: -margin)
         superview?.addConstraint(c)
         return c
     }
     
     
-    public func pinAboveSibling(sibling:UIView,withMargin margin:CGFloat = 8) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
-        assert(superview == sibling.superview, "NOT SIBLING")
-        
+    public func pinAboveSibling(sibling:UIView,margin:CGFloat = PA_DEFAULT_SIBLING_MARGIN) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute:.Bottom , relatedBy: .Equal, toItem: sibling, attribute: .Top, multiplier: 1.0, constant: -margin)
         superview?.addConstraint(c)
         return c
     }
     
-    public func pinBelowSibling(sibling:UIView,withMargin margin:CGFloat = 8,priority:UILayoutPriority = 1000) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
-        assert(superview == sibling.superview, "NOT SIBLING")
-        
+    public func pinBelowSibling(sibling:UIView,margin:CGFloat = PA_DEFAULT_SIBLING_MARGIN) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: sibling, attribute: .Bottom, multiplier: 1.0, constant: margin)
-        c.priority = priority
         superview?.addConstraint(c)
         return c
     }
     
-    public func pinCenterXToSibling(sibling:UIView,withOffset offset:CGFloat = 0) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
-        assert(superview == sibling.superview, "NOT SIBLING")
-        
+    public func pinCenterXToSibling(sibling:UIView,offset:CGFloat = 0) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute: .CenterX, relatedBy: .Equal, toItem: sibling, attribute: .CenterX, multiplier: 1.0, constant: offset)
         superview?.addConstraint(c)
         return c
     }
     
-    public func pinCenterYToSibling(sibling:UIView,withOffset offset:CGFloat = 0) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
-        assert(superview == sibling.superview, "NOT SIBLING")
-        
+    public func pinCenterYToSibling(sibling:UIView,offset:CGFloat = 0) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute: .CenterY, relatedBy: .Equal, toItem: sibling, attribute: .CenterY, multiplier: 1.0, constant: offset)
         superview?.addConstraint(c)
         return c
     }
     
     public func pinWidthToSibling(sibling:UIView,multiplier:CGFloat = 1.0,constant :CGFloat = 0.0) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
-        assert(superview == sibling.superview, "NOT SIBLING")
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .Equal, toItem: sibling, attribute: .Width, multiplier: multiplier, constant: constant)
         superview?.addConstraint(c)
         return c
     }
     
     public func pinHeightToSibling(sibling:UIView,multiplier:CGFloat = 1.0,constant :CGFloat = 0.0) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
-        assert(superview == sibling.superview, "NOT SIBLING")
+        assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: sibling, attribute: .Height, multiplier: multiplier, constant: constant)
         superview?.addConstraint(c)
         return c
@@ -188,58 +191,92 @@ public extension UIView{
     
     public func pinWidth(width:CGFloat) -> NSLayoutConstraint{
         let c = NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: width)
-        superview?.addConstraint(c)
+        self.addConstraint(c)
         return c
     }
     
     public func pinWidthGreaterThanOrEqual(width:CGFloat) -> NSLayoutConstraint{
         let c = NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .GreaterThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: width)
-        superview?.addConstraint(c)
+        self.addConstraint(c)
         return c
     }
     
     func pinWidthLessThanOrEqual(width:CGFloat) -> NSLayoutConstraint{
         let c = NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .LessThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: width)
-        superview?.addConstraint(c)
+        self.addConstraint(c)
         return c
     }
     
     func pinHeight(height:CGFloat) -> NSLayoutConstraint{
         let c = NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: height)
-        superview?.addConstraint(c)
+        self.addConstraint(c)
         return c
     }
     
     public func pinHeightGreaterThanOrEqual(height:CGFloat) -> NSLayoutConstraint{
         let c = NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .GreaterThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: height)
-        superview?.addConstraint(c)
+        self.addConstraint(c)
         return c
     }
     
     public func pinHeightLessThanOrEqual(height:CGFloat) -> NSLayoutConstraint{
         let c = NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .LessThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: height)
-        superview?.addConstraint(c)
+        self.addConstraint(c)
         return c
     }
     
+    public func pinSize(size:CGSize) -> PASizeConstraints{
+        let widthC = pinWidth(size.width)
+        let heightC = pinHeight(size.height)
+        return PASizeConstraints(width:widthC,height:heightC)
+    }
+    
     public func pinCenterY(offset:CGFloat=0) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
+        assertHasSuperview()
         let c = NSLayoutConstraint(item: self, attribute: .CenterY, relatedBy: .Equal, toItem: superview!, attribute: .CenterY, multiplier: 1.0, constant: offset)
         superview?.addConstraint(c)
         return c
     }
     
     public func pinCenterX(offset:CGFloat=0) -> NSLayoutConstraint{
-        assert(superview != nil, "NO SUPERVIEW")
+        assertHasSuperview()
         let c = NSLayoutConstraint(item: self, attribute: .CenterX, relatedBy: .Equal, toItem: superview!, attribute: .CenterX, multiplier: 1.0, constant: offset)
         superview?.addConstraint(c)
         return c
     }
     
-    public func pinCenter(xOffset :CGFloat = 0,yOffset:CGFloat = 0) -> CenterConstraints{
+    public func pinTrailingToCenterX(offset:CGFloat=0) -> NSLayoutConstraint{
+        assertHasSuperview()
+        let c = NSLayoutConstraint(item: self, attribute: .Trailing, relatedBy: .Equal, toItem: superview!, attribute: .CenterX, multiplier: 1.0, constant: -offset)
+        superview?.addConstraint(c)
+        return c
+    }
+    
+    public func pinLeadingToCenterX(offset:CGFloat=0) -> NSLayoutConstraint{
+        assertHasSuperview()
+        let c = NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: superview!, attribute: .CenterX, multiplier: 1.0, constant: offset)
+        superview?.addConstraint(c)
+        return c
+    }
+    
+    public func pinAboveCenterY(offset:CGFloat=0) -> NSLayoutConstraint{
+        assertHasSuperview()
+        let c = NSLayoutConstraint(item: self, attribute: .Bottom, relatedBy: .Equal, toItem: superview!, attribute: .CenterY, multiplier: 1.0, constant: -offset)
+        superview?.addConstraint(c)
+        return c
+    }
+    
+    public func pinBelowCenterY(offset:CGFloat=0) -> NSLayoutConstraint{
+        assertHasSuperview()
+        let c = NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: superview!, attribute: .CenterY, multiplier: 1.0, constant: offset)
+        superview?.addConstraint(c)
+        return c
+    }
+    
+    public func pinCenter(xOffset :CGFloat = 0,yOffset:CGFloat = 0) -> PACenterConstraints{
        let centerX  = pinCenterX(xOffset)
         let centerY = pinCenterY(yOffset)
-        return CenterConstraints(centerX: centerX, centerY: centerY)
+        return PACenterConstraints(centerX: centerX, centerY: centerY)
     }
     
     public func pinAspectRatio(aspectRatio:CGFloat=0) -> NSLayoutConstraint{

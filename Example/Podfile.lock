@@ -1,0 +1,23 @@
+PODS:
+  - Nimble (2.0.0)
+  - PinAutoLayout (0.1.0)
+  - Quick (0.6.0)
+  - RandomColorSwift (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 2.0.0)
+  - PinAutoLayout (from `../`)
+  - Quick (~> 0.6.0)
+  - RandomColorSwift
+
+EXTERNAL SOURCES:
+  PinAutoLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 472e75466819eb8c06299233e87c694a9b51328a
+  PinAutoLayout: f1fb2a728c2487e00da02cd587021678b4c2e028
+  Quick: 563686dbcf0ae0f9f7401ac9cd2d786ee1b7f3d7
+  RandomColorSwift: b2e95d6d3670def6d2f907ec7b7041138b268ac9
+
+COCOAPODS: 0.38.2
