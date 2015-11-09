@@ -138,6 +138,20 @@ public extension UIView{
         superview?.addConstraint(c)
         return c
     }
+   
+    public func pinLeadingEqualWithSibling(sibling:UIView,offset:CGFloat = 0) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
+        let c = NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: sibling, attribute: .Leading, multiplier: 1.0, constant: offset)
+        superview?.addConstraint(c)
+        return c
+    }
+    
+    public func pinTrailingEqualWithSibling(sibling:UIView,offset:CGFloat = 0) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
+        let c = NSLayoutConstraint(item: self, attribute: .Trailing, relatedBy: .Equal, toItem: sibling, attribute: .Trailing, multiplier: 1.0, constant: -offset)
+        superview?.addConstraint(c)
+        return c
+    }
     
     public func pinTrailingToSibing(sibling:UIView,margin:CGFloat = PA_DEFAULT_SIBLING_MARGIN) -> NSLayoutConstraint{
         assertIsSibling(sibling)
