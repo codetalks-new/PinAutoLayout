@@ -175,6 +175,21 @@ public extension UIView{
         return c
     }
     
+    public func pinTopWithSibling(sibling:UIView,offset:CGFloat = 0) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
+        let c = NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: sibling, attribute: .Top, multiplier: 1.0, constant: offset)
+        superview?.addConstraint(c)
+        return c
+    }
+    
+    public func pinBottomWithSibling(sibling:UIView,offset:CGFloat = 0) -> NSLayoutConstraint{
+        assertIsSibling(sibling)
+        let c = NSLayoutConstraint(item: self, attribute: .Bottom, relatedBy: .Equal, toItem: sibling, attribute: .Bottom, multiplier: 1.0, constant: -offset)
+        superview?.addConstraint(c)
+        return c
+    }
+    
+    
     public func pinCenterXToSibling(sibling:UIView,offset:CGFloat = 0) -> NSLayoutConstraint{
         assertIsSibling(sibling)
         let c = NSLayoutConstraint(item: self, attribute: .CenterX, relatedBy: .Equal, toItem: sibling, attribute: .CenterX, multiplier: 1.0, constant: offset)
