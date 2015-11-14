@@ -9,33 +9,45 @@
 import UIKit
 
 public class PAEdgeConstraints{
-    var leading:NSLayoutConstraint?
-    var trailing:NSLayoutConstraint?
-    var top:NSLayoutConstraint?
-    var bottom:NSLayoutConstraint?
+    public var leading:NSLayoutConstraint?
+    public var trailing:NSLayoutConstraint?
+    public var top:NSLayoutConstraint?
+    public var bottom:NSLayoutConstraint?
+    
+    public func updateBy(edge:UIEdgeInsets){
+        leading?.constant = edge.left
+        trailing?.constant = edge.right
+        top?.constant = edge.top
+        bottom?.constant = edge.bottom
+    }
 }
 
 public class PACenterConstraints{
-    let centerX:NSLayoutConstraint
-    let centerY:NSLayoutConstraint
+    public let centerX:NSLayoutConstraint
+    public let centerY:NSLayoutConstraint
     
-    init(centerX:NSLayoutConstraint,centerY:NSLayoutConstraint){
+    public init(centerX:NSLayoutConstraint,centerY:NSLayoutConstraint){
         self.centerX = centerX
         self.centerY = centerY
     }
 }
 
 public class PASizeConstraints{
-    let width:NSLayoutConstraint
-    let height:NSLayoutConstraint
-    init(width:NSLayoutConstraint,height:NSLayoutConstraint){
+    public let width:NSLayoutConstraint
+    public let height:NSLayoutConstraint
+    public init(width:NSLayoutConstraint,height:NSLayoutConstraint){
         self.width = width
         self.height = height
     }
+    
+    public func updateBy(size:CGSize){
+        width.constant = size.width
+        height.constant = size.height
+    }
 }
 
-let PA_DEFAULT_MARGIN : CGFloat = 15
-let PA_DEFAULT_SIBLING_MARGIN : CGFloat = 8
+public let PA_DEFAULT_MARGIN : CGFloat = 15
+public let PA_DEFAULT_SIBLING_MARGIN : CGFloat = 8
 
 public extension UIView{
     
