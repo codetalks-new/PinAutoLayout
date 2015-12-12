@@ -1,0 +1,14 @@
+PODS:
+  - PinAutoLayout (0.1.0)
+
+DEPENDENCIES:
+  - PinAutoLayout (from `../`)
+
+EXTERNAL SOURCES:
+  PinAutoLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PinAutoLayout: f1fb2a728c2487e00da02cd587021678b4c2e028
+
+COCOAPODS: 0.39.0
