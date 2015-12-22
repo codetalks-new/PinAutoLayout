@@ -78,9 +78,10 @@ public extension UIView{
         return c
     }
     
-    public func pinBottom(margin:CGFloat = PA_DEFAULT_MARGIN) -> NSLayoutConstraint{
+  public func pinBottom(margin:CGFloat = PA_DEFAULT_MARGIN,priority:UILayoutPriority=UILayoutPriorityRequired) -> NSLayoutConstraint{
         assertHasSuperview()
         let c = NSLayoutConstraint(item: superview!, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: margin)
+        c.priority  = priority
         superview?.addConstraint(c)
         return c
     }
