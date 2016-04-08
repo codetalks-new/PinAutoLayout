@@ -7,126 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02BC370161EF1F4C0AB53FFEBCADA27F /* PinAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF85AD4C92A310EDC7823CDA64D8064 /* PinAutoLayout-dummy.m */; };
-		3E4447D11C1C679900B43DFA /* UIView+LinearAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4447CE1C1C679900B43DFA /* UIView+LinearAutoLayout.swift */; };
-		3E4447D21C1C679900B43DFA /* UIView+PinAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4447CF1C1C679900B43DFA /* UIView+PinAutoLayout.swift */; };
-		3E4447D31C1C679900B43DFA /* UIViewController+PinAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4447D01C1C679900B43DFA /* UIViewController+PinAutoLayout.swift */; };
-		5EA58AEFC3CC1B96563346376BB3CE82 /* Pods-PinAutoLayout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6BF5444C07F9819C620A51847BA290 /* Pods-PinAutoLayout_Tests-dummy.m */; };
-		86326DBA7CDE5D9CD54DCCEC229CF605 /* Pods-PinAutoLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD27C41258CDF85378391361C43ABA7 /* Pods-PinAutoLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1A0544E0550F7B1096C8E5EDEF08F11 /* PinAutoLayout.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D6ACD3AE0B05DF945DC1BFE9E2323B0 /* PinAutoLayout.bundle */; };
-		A31AFA4C1F91EF7CBCF2305F201A19D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		DB9F569611423C3DAC54A1642DF5F2E1 /* PinAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3FEC142FC34357CFE80B2FA8286308 /* PinAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E087BBD476F9ED44002D570595902702 /* Pods-PinAutoLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A47774550BF8E642F018710FC0611D /* Pods-PinAutoLayout_Example-dummy.m */; };
-		E3C080FA2B76AC74C8AE1417E5FEB19D /* Pods-PinAutoLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5BF60C4675F096F4DB141BE29F0CFA /* Pods-PinAutoLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4BF31ACE4153083A939CB7E11182455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		FAD30E7BF183B87256E7F2404F1A4F0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0DB50D79C99777E09F07B2FBACB23F0C /* PinAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3FEC142FC34357CFE80B2FA8286308 /* PinAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E829B4CEA3E66E0EF0A4278A444896C /* PinAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF85AD4C92A310EDC7823CDA64D8064 /* PinAutoLayout-dummy.m */; };
+		1EF4CE26834529DCF115B847059223A7 /* Pods-PinAutoLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD27C41258CDF85378391361C43ABA7 /* Pods-PinAutoLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AB93EDD0F3EB0997BC84BE55B5DD305 /* UIView+LinearAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C62D8485F851BE0EB8B10B6D051F78F /* UIView+LinearAutoLayout.swift */; };
+		4AC9332A655D2CE0C8AE1F8751C99F83 /* Pods-PinAutoLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A47774550BF8E642F018710FC0611D /* Pods-PinAutoLayout_Example-dummy.m */; };
+		6B3A0043499FD0270569464FFE255B9C /* UIViewController+PinAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7396A053B2C80DA642AFFCF071E734BA /* UIViewController+PinAutoLayout.swift */; };
+		700BE0AC8AD4C933CB61B6563FB5E2A1 /* Pods-PinAutoLayout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6BF5444C07F9819C620A51847BA290 /* Pods-PinAutoLayout_Tests-dummy.m */; };
+		ABAEFEF54DF5CE77558514476CA3D3DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		C9009C96F833F68EEA18E99728564D75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		D4220781197D2E6C05BC880A6408B287 /* Pods-PinAutoLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5BF60C4675F096F4DB141BE29F0CFA /* Pods-PinAutoLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F15FD50AE3D87892E337922EC8EE7DDE /* UIView+PinAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504E96F0BB46B2AB947DD8EBA8DF3EB /* UIView+PinAutoLayout.swift */; };
+		F2F0EC5886A97CA5017D95D3A76DCBDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2FF48593CF7C6DC8B999BA38BD29E1A3 /* PBXContainerItemProxy */ = {
+		378FEB7D9E0DAB661EBD9C3D0A97548C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CDC60F97FD34A7348960074348EEFD3E;
-			remoteInfo = "PinAutoLayout-PinAutoLayout";
-		};
-		4D4940DD56E767ABA02DD576D0320C66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0CB96053484A52475BB06AE50AF23F22;
+			remoteGlobalIDString = 3E385C15A3105F842A2B341DCFEC9E45;
 			remoteInfo = PinAutoLayout;
 		};
-		D34D88D948349D58013B7AC4495542EC /* PBXContainerItemProxy */ = {
+		4CF984A5A0D045FBDAC0AB82AE7954C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0CB96053484A52475BB06AE50AF23F22;
+			remoteGlobalIDString = 3E385C15A3105F842A2B341DCFEC9E45;
 			remoteInfo = PinAutoLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092B8EEB1875BEBA1C2DDE1D031AF719 /* PinAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4243D8BF1AB706717A670E2DAE12C6 /* Pods-PinAutoLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinAutoLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1E3FEC142FC34357CFE80B2FA8286308 /* PinAutoLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinAutoLayout-umbrella.h"; sourceTree = "<group>"; };
 		21D142C163424BF653FE9B42F8EFC407 /* Pods-PinAutoLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinAutoLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3E4447CE1C1C679900B43DFA /* UIView+LinearAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LinearAutoLayout.swift"; sourceTree = "<group>"; };
-		3E4447CF1C1C679900B43DFA /* UIView+PinAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinAutoLayout.swift"; sourceTree = "<group>"; };
-		3E4447D01C1C679900B43DFA /* UIViewController+PinAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PinAutoLayout.swift"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4E5BF60C4675F096F4DB141BE29F0CFA /* Pods-PinAutoLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PinAutoLayout_Example-umbrella.h"; sourceTree = "<group>"; };
 		53F236B9BB41FB1BB887F256ACE3BEA6 /* Pods-PinAutoLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PinAutoLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5447BA8E9EB62D884F11422DA223E9C1 /* PinAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinAutoLayout.xcconfig; sourceTree = "<group>"; };
-		5D6ACD3AE0B05DF945DC1BFE9E2323B0 /* PinAutoLayout.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinAutoLayout.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBA67B94E24AF8B1C061829647D1C4D /* Pods-PinAutoLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PinAutoLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		61A9990A48F27004FC0D59D005C3EB0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		625964B8322735D4DFFCDB1815284E61 /* Pods-PinAutoLayout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinAutoLayout_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		62D14C0316A968680F97374D6AC72127 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C425B36E0A525EEBA6A9915F5F4B3A /* PinAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinAutoLayout-prefix.pch"; sourceTree = "<group>"; };
+		6C62D8485F851BE0EB8B10B6D051F78F /* UIView+LinearAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+LinearAutoLayout.swift"; sourceTree = "<group>"; };
+		7396A053B2C80DA642AFFCF071E734BA /* UIViewController+PinAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+PinAutoLayout.swift"; sourceTree = "<group>"; };
+		741003936B2A9BB88E64BF7143A92FA5 /* Pods_PinAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinAutoLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7867885CBF9E8A3B3F57F78BC7DA6E4C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D0645D9630305AB6988C210F3F4489 /* PinAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PinAutoLayout.modulemap; sourceTree = "<group>"; };
 		93A47774550BF8E642F018710FC0611D /* Pods-PinAutoLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PinAutoLayout_Example-dummy.m"; sourceTree = "<group>"; };
 		93E9310FA7F7A8F9C2EBE592DD42C27E /* Pods-PinAutoLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinAutoLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9AF85AD4C92A310EDC7823CDA64D8064 /* PinAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinAutoLayout-dummy.m"; sourceTree = "<group>"; };
+		A504E96F0BB46B2AB947DD8EBA8DF3EB /* UIView+PinAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+PinAutoLayout.swift"; sourceTree = "<group>"; };
 		B80BB0EB422F592186EC5B5AF889FC53 /* Pods-PinAutoLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PinAutoLayout_Example.modulemap"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE52CD1B7BDF4FF26E4BBFB9D4164818 /* Pods-PinAutoLayout_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinAutoLayout_Example-resources.sh"; sourceTree = "<group>"; };
-		CCCA5C8540E631321AFA51C2BB0167B1 /* Pods_PinAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinAutoLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D28C76C478E1FF00DCB2E72A06D17D33 /* Pods_PinAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinAutoLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D4B194CF9C5633893B75C44F0605FE /* Pods-PinAutoLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinAutoLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DACEE7D421F2FF27BFD42F33F83D0D18 /* Pods-PinAutoLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinAutoLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DC6BF5444C07F9819C620A51847BA290 /* Pods-PinAutoLayout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PinAutoLayout_Tests-dummy.m"; sourceTree = "<group>"; };
-		EC1A42586055FB9684BE66E45DF3164A /* PinAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1F0CB2787480D3F0A89D32850E49AC /* Pods-PinAutoLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PinAutoLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F05D4C85BDB9505B1416CDF321E44575 /* Pods-PinAutoLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PinAutoLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F5B2B0A0EE486F2D1C3B1047A1933D12 /* Pods-PinAutoLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PinAutoLayout_Tests.modulemap"; sourceTree = "<group>"; };
 		FC3F259A09DCFE61A68E2187DD07E948 /* Pods-PinAutoLayout_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinAutoLayout_Tests-resources.sh"; sourceTree = "<group>"; };
 		FCD27C41258CDF85378391361C43ABA7 /* Pods-PinAutoLayout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PinAutoLayout_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FDD539EBCC1053A68E9E2082B050D364 /* Pods_PinAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinAutoLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28590343BF932AF0C9A2A2DCBDC67FAE /* Frameworks */ = {
+		0B5B78A52F5650817AF725D0455A4B60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31AFA4C1F91EF7CBCF2305F201A19D1 /* Foundation.framework in Frameworks */,
+				ABAEFEF54DF5CE77558514476CA3D3DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C82D90AF8572A0BC84CD32607E79E33 /* Frameworks */ = {
+		955016DD44C14F6C87B588E5401E541A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD30E7BF183B87256E7F2404F1A4F0D /* Foundation.framework in Frameworks */,
+				C9009C96F833F68EEA18E99728564D75 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73D6F9FBC03D4AFF0F5BF4C1CB734D86 /* Frameworks */ = {
+		995E99B04C6C1A28474CFC3C0C7EE31D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4BF31ACE4153083A939CB7E11182455 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C61EFEFC667A2C032506044576875147 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F2F0EC5886A97CA5017D95D3A76DCBDD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0620DA98BBD0BF6F7A7C62E219BF3AA2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6C62D8485F851BE0EB8B10B6D051F78F /* UIView+LinearAutoLayout.swift */,
+				A504E96F0BB46B2AB947DD8EBA8DF3EB /* UIView+PinAutoLayout.swift */,
+				7396A053B2C80DA642AFFCF071E734BA /* UIViewController+PinAutoLayout.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		112C7921E3A497328D11F4930CBBC9CA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		43D25877DF4F419295B1E50C201391A2 /* PinAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				C25A1C43AB13CA9D7BF415CF6D9BC2FA /* Pod */,
+				549451C87D7D13943DD5430B1EC467F3 /* Pod */,
 				F59E37769DDCC9A561ACA6DF8F2C6407 /* Support Files */,
 			);
 			name = PinAutoLayout;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		549451C87D7D13943DD5430B1EC467F3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0620DA98BBD0BF6F7A7C62E219BF3AA2 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		63EE3BF5978070D761557C98AD041B29 /* Pods-PinAutoLayout_Example */ = {
@@ -147,6 +157,16 @@
 			path = "Target Support Files/Pods-PinAutoLayout_Example";
 			sourceTree = "<group>";
 		};
+		66CAE38E4F9FBCB7FA698DB008F8D0F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				092B8EEB1875BEBA1C2DDE1D031AF719 /* PinAutoLayout.framework */,
+				741003936B2A9BB88E64BF7143A92FA5 /* Pods_PinAutoLayout_Example.framework */,
+				FDD539EBCC1053A68E9E2082B050D364 /* Pods_PinAutoLayout_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		78D50C77E689BDF24BF2BD70F55F37D9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,19 +182,9 @@
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				8D44164CB738A0A677649D8F32E25B57 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C5AD217F47332232A8A42E7FFDC0A354 /* Products */,
+				66CAE38E4F9FBCB7FA698DB008F8D0F7 /* Products */,
 				78D50C77E689BDF24BF2BD70F55F37D9 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8AD5ECDAEDE5E7D892881AA2B011D0D7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3E4447CE1C1C679900B43DFA /* UIView+LinearAutoLayout.swift */,
-				3E4447CF1C1C679900B43DFA /* UIView+PinAutoLayout.swift */,
-				3E4447D01C1C679900B43DFA /* UIViewController+PinAutoLayout.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		8D44164CB738A0A677649D8F32E25B57 /* Development Pods */ = {
@@ -188,36 +198,9 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				112C7921E3A497328D11F4930CBBC9CA /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C25A1C43AB13CA9D7BF415CF6D9BC2FA /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8AD5ECDAEDE5E7D892881AA2B011D0D7 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		C5AD217F47332232A8A42E7FFDC0A354 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D6ACD3AE0B05DF945DC1BFE9E2323B0 /* PinAutoLayout.bundle */,
-				EC1A42586055FB9684BE66E45DF3164A /* PinAutoLayout.framework */,
-				CCCA5C8540E631321AFA51C2BB0167B1 /* Pods_PinAutoLayout_Example.framework */,
-				D28C76C478E1FF00DCB2E72A06D17D33 /* Pods_PinAutoLayout_Tests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E728318D85688FB383155FB2665BEFA8 /* Pods-PinAutoLayout_Tests */ = {
@@ -255,104 +238,85 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4FF2BC803DA90BC194CDC5FA2DA3FC86 /* Headers */ = {
+		5EB93C042D40A701AF6D5812E8E945BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C080FA2B76AC74C8AE1417E5FEB19D /* Pods-PinAutoLayout_Example-umbrella.h in Headers */,
+				D4220781197D2E6C05BC880A6408B287 /* Pods-PinAutoLayout_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70DE406D6E2064D8CDC63263F12E1EAC /* Headers */ = {
+		772E949271328E11FBF171C14DC73E9A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86326DBA7CDE5D9CD54DCCEC229CF605 /* Pods-PinAutoLayout_Tests-umbrella.h in Headers */,
+				0DB50D79C99777E09F07B2FBACB23F0C /* PinAutoLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0DF11E62D43560CB500F5344161864C /* Headers */ = {
+		80DE5C482FD8D1B52FD10DFFD42FE36A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9F569611423C3DAC54A1642DF5F2E1 /* PinAutoLayout-umbrella.h in Headers */,
+				1EF4CE26834529DCF115B847059223A7 /* Pods-PinAutoLayout_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0CB96053484A52475BB06AE50AF23F22 /* PinAutoLayout */ = {
+		3E385C15A3105F842A2B341DCFEC9E45 /* PinAutoLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 162B094677170BC43160F8A10DEDC777 /* Build configuration list for PBXNativeTarget "PinAutoLayout" */;
+			buildConfigurationList = B382A3A292D0B7422CD9458F8B4473E7 /* Build configuration list for PBXNativeTarget "PinAutoLayout" */;
 			buildPhases = (
-				0B1D28391FD00EC9776B56A831A4FD15 /* Sources */,
-				6C82D90AF8572A0BC84CD32607E79E33 /* Frameworks */,
-				8FFCB09A9A1973F6AA418F0A81903EC8 /* Resources */,
-				A0DF11E62D43560CB500F5344161864C /* Headers */,
+				933E72600709A12651D562FD5B296F0B /* Sources */,
+				955016DD44C14F6C87B588E5401E541A /* Frameworks */,
+				772E949271328E11FBF171C14DC73E9A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				43AFAF0AD5670B6843AD3C09C00B8D43 /* PBXTargetDependency */,
 			);
 			name = PinAutoLayout;
 			productName = PinAutoLayout;
-			productReference = EC1A42586055FB9684BE66E45DF3164A /* PinAutoLayout.framework */;
+			productReference = 092B8EEB1875BEBA1C2DDE1D031AF719 /* PinAutoLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		168268D026719DB9500535E43781AF08 /* Pods-PinAutoLayout_Example */ = {
+		A8610D692CC308D402794043920C4C49 /* Pods-PinAutoLayout_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E1A36E3A1CD14827E0246B5AABEE1B /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Example" */;
+			buildConfigurationList = 7D4AB08B80258FFB46CEB37EBF632085 /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Example" */;
 			buildPhases = (
-				54AC82137B374BE9BE066851E05DD12C /* Sources */,
-				73D6F9FBC03D4AFF0F5BF4C1CB734D86 /* Frameworks */,
-				4FF2BC803DA90BC194CDC5FA2DA3FC86 /* Headers */,
+				BD716D16F9236F71E535CEFA1FC7DD0C /* Sources */,
+				995E99B04C6C1A28474CFC3C0C7EE31D /* Frameworks */,
+				5EB93C042D40A701AF6D5812E8E945BD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D3FA28C8358D415F18E506F6F9D02907 /* PBXTargetDependency */,
+				81F33602215B502E5518E302B3E122D7 /* PBXTargetDependency */,
 			);
 			name = "Pods-PinAutoLayout_Example";
 			productName = "Pods-PinAutoLayout_Example";
-			productReference = CCCA5C8540E631321AFA51C2BB0167B1 /* Pods_PinAutoLayout_Example.framework */;
+			productReference = 741003936B2A9BB88E64BF7143A92FA5 /* Pods_PinAutoLayout_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A0853899C5532AA9CCE0D910BE0CD9B0 /* Pods-PinAutoLayout_Tests */ = {
+		FA65AE0CB08E336FD7CBCA750D3CAFFD /* Pods-PinAutoLayout_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72947DFB8925EF7692EE448CE5CF160F /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Tests" */;
+			buildConfigurationList = CA81FAE18CD09BE299D2529C4EE5BCA8 /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Tests" */;
 			buildPhases = (
-				791F3FE2E3E72846AF6C78B49732A9A7 /* Sources */,
-				28590343BF932AF0C9A2A2DCBDC67FAE /* Frameworks */,
-				70DE406D6E2064D8CDC63263F12E1EAC /* Headers */,
+				39788FDD52123317CC265D25BD9DAEFA /* Sources */,
+				0B5B78A52F5650817AF725D0455A4B60 /* Frameworks */,
+				80DE5C482FD8D1B52FD10DFFD42FE36A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				55D04B84C2023C6C5C2A76225FA1D370 /* PBXTargetDependency */,
+				0B1F7BA1445773C1CEA44C24C0F53BB5 /* PBXTargetDependency */,
 			);
 			name = "Pods-PinAutoLayout_Tests";
 			productName = "Pods-PinAutoLayout_Tests";
-			productReference = D28C76C478E1FF00DCB2E72A06D17D33 /* Pods_PinAutoLayout_Tests.framework */;
+			productReference = FDD539EBCC1053A68E9E2082B050D364 /* Pods_PinAutoLayout_Tests.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		CDC60F97FD34A7348960074348EEFD3E /* PinAutoLayout-PinAutoLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEDC1F2700071A5A82079D9257B54A1B /* Build configuration list for PBXNativeTarget "PinAutoLayout-PinAutoLayout" */;
-			buildPhases = (
-				218FA53E42127035F04710E534073F02 /* Sources */,
-				C61EFEFC667A2C032506044576875147 /* Frameworks */,
-				80088B55821C687012AF551794B84822 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PinAutoLayout-PinAutoLayout";
-			productName = "PinAutoLayout-PinAutoLayout";
-			productReference = 5D6ACD3AE0B05DF945DC1BFE9E2323B0 /* PinAutoLayout.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -371,96 +335,123 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C5AD217F47332232A8A42E7FFDC0A354 /* Products */;
+			productRefGroup = 66CAE38E4F9FBCB7FA698DB008F8D0F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CB96053484A52475BB06AE50AF23F22 /* PinAutoLayout */,
-				CDC60F97FD34A7348960074348EEFD3E /* PinAutoLayout-PinAutoLayout */,
-				168268D026719DB9500535E43781AF08 /* Pods-PinAutoLayout_Example */,
-				A0853899C5532AA9CCE0D910BE0CD9B0 /* Pods-PinAutoLayout_Tests */,
+				3E385C15A3105F842A2B341DCFEC9E45 /* PinAutoLayout */,
+				A8610D692CC308D402794043920C4C49 /* Pods-PinAutoLayout_Example */,
+				FA65AE0CB08E336FD7CBCA750D3CAFFD /* Pods-PinAutoLayout_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		80088B55821C687012AF551794B84822 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8FFCB09A9A1973F6AA418F0A81903EC8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1A0544E0550F7B1096C8E5EDEF08F11 /* PinAutoLayout.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		0B1D28391FD00EC9776B56A831A4FD15 /* Sources */ = {
+		39788FDD52123317CC265D25BD9DAEFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E4447D11C1C679900B43DFA /* UIView+LinearAutoLayout.swift in Sources */,
-				3E4447D31C1C679900B43DFA /* UIViewController+PinAutoLayout.swift in Sources */,
-				3E4447D21C1C679900B43DFA /* UIView+PinAutoLayout.swift in Sources */,
-				02BC370161EF1F4C0AB53FFEBCADA27F /* PinAutoLayout-dummy.m in Sources */,
+				700BE0AC8AD4C933CB61B6563FB5E2A1 /* Pods-PinAutoLayout_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		218FA53E42127035F04710E534073F02 /* Sources */ = {
+		933E72600709A12651D562FD5B296F0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E829B4CEA3E66E0EF0A4278A444896C /* PinAutoLayout-dummy.m in Sources */,
+				4AB93EDD0F3EB0997BC84BE55B5DD305 /* UIView+LinearAutoLayout.swift in Sources */,
+				F15FD50AE3D87892E337922EC8EE7DDE /* UIView+PinAutoLayout.swift in Sources */,
+				6B3A0043499FD0270569464FFE255B9C /* UIViewController+PinAutoLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54AC82137B374BE9BE066851E05DD12C /* Sources */ = {
+		BD716D16F9236F71E535CEFA1FC7DD0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E087BBD476F9ED44002D570595902702 /* Pods-PinAutoLayout_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		791F3FE2E3E72846AF6C78B49732A9A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EA58AEFC3CC1B96563346376BB3CE82 /* Pods-PinAutoLayout_Tests-dummy.m in Sources */,
+				4AC9332A655D2CE0C8AE1F8751C99F83 /* Pods-PinAutoLayout_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		43AFAF0AD5670B6843AD3C09C00B8D43 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PinAutoLayout-PinAutoLayout";
-			target = CDC60F97FD34A7348960074348EEFD3E /* PinAutoLayout-PinAutoLayout */;
-			targetProxy = 2FF48593CF7C6DC8B999BA38BD29E1A3 /* PBXContainerItemProxy */;
-		};
-		55D04B84C2023C6C5C2A76225FA1D370 /* PBXTargetDependency */ = {
+		0B1F7BA1445773C1CEA44C24C0F53BB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PinAutoLayout;
-			target = 0CB96053484A52475BB06AE50AF23F22 /* PinAutoLayout */;
-			targetProxy = 4D4940DD56E767ABA02DD576D0320C66 /* PBXContainerItemProxy */;
+			target = 3E385C15A3105F842A2B341DCFEC9E45 /* PinAutoLayout */;
+			targetProxy = 378FEB7D9E0DAB661EBD9C3D0A97548C /* PBXContainerItemProxy */;
 		};
-		D3FA28C8358D415F18E506F6F9D02907 /* PBXTargetDependency */ = {
+		81F33602215B502E5518E302B3E122D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PinAutoLayout;
-			target = 0CB96053484A52475BB06AE50AF23F22 /* PinAutoLayout */;
-			targetProxy = D34D88D948349D58013B7AC4495542EC /* PBXContainerItemProxy */;
+			target = 3E385C15A3105F842A2B341DCFEC9E45 /* PinAutoLayout */;
+			targetProxy = 4CF984A5A0D045FBDAC0AB82AE7954C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+		0CA3F6EE1D112FCAA8F96F2547F28B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5447BA8E9EB62D884F11422DA223E9C1 /* PinAutoLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinAutoLayout/PinAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinAutoLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinAutoLayout/PinAutoLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PinAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C6AF187D4D2A2D3DB52960B73FE0BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5447BA8E9EB62D884F11422DA223E9C1 /* PinAutoLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinAutoLayout/PinAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinAutoLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinAutoLayout/PinAutoLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PinAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		372FF5048FF42C3A7A18B70A30D785C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -480,7 +471,10 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -494,7 +488,41 @@
 			};
 			name = Release;
 		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		37DC8DD5C264F782AB57461354EE6B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D4B194CF9C5633893B75C44F0605FE /* Pods-PinAutoLayout_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PinAutoLayout_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PinAutoLayout_Tests/Pods-PinAutoLayout_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PinAutoLayout_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70F0378D63DE3D2DCC739550669BD46A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -512,10 +540,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -533,17 +563,19 @@
 			};
 			name = Debug;
 		};
-		8E0034ACDBDB2711F2ACC17E5B62D589 /* Debug */ = {
+		92BBFAB93CE53B5AAB263357EFEFC596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21D142C163424BF653FE9B42F8EFC407 /* Pods-PinAutoLayout_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-PinAutoLayout_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -554,6 +586,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PinAutoLayout_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -564,88 +597,19 @@
 			};
 			name = Debug;
 		};
-		9D64D0EEE8716DB8B6D408FDD64C3CF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2D4B194CF9C5633893B75C44F0605FE /* Pods-PinAutoLayout_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PinAutoLayout_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PinAutoLayout_Tests/Pods-PinAutoLayout_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PinAutoLayout_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BEF340D1EF7EEAE0A22F3C74DDDA8727 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5447BA8E9EB62D884F11422DA223E9C1 /* PinAutoLayout.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PinAutoLayout/PinAutoLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PinAutoLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PinAutoLayout/PinAutoLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PinAutoLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C568B1A212F4915499AFFCCE74B13DEB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5447BA8E9EB62D884F11422DA223E9C1 /* PinAutoLayout.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PinAutoLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D5E0AF088C26FB6A686407F5A59C4C02 /* Release */ = {
+		A7D0ED967FDC969968856E98A41347E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DACEE7D421F2FF27BFD42F33F83D0D18 /* Pods-PinAutoLayout_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-PinAutoLayout_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -656,6 +620,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PinAutoLayout_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -665,17 +630,19 @@
 			};
 			name = Release;
 		};
-		E20E01816489E0538DC062FEE01B7260 /* Release */ = {
+		BDEB02A0AF01B82B86232DB8436922E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93E9310FA7F7A8F9C2EBE592DD42C27E /* Pods-PinAutoLayout_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-PinAutoLayout_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -686,6 +653,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PinAutoLayout_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -695,91 +663,41 @@
 			};
 			name = Release;
 		};
-		E28342E6E68D3A3F7879AD05A06215E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5447BA8E9EB62D884F11422DA223E9C1 /* PinAutoLayout.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PinAutoLayout/PinAutoLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PinAutoLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PinAutoLayout/PinAutoLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PinAutoLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F4FCC880D5176D35B8FE44F35B9A93D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5447BA8E9EB62D884F11422DA223E9C1 /* PinAutoLayout.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PinAutoLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		162B094677170BC43160F8A10DEDC777 /* Build configuration list for PBXNativeTarget "PinAutoLayout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E28342E6E68D3A3F7879AD05A06215E4 /* Debug */,
-				BEF340D1EF7EEAE0A22F3C74DDDA8727 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				70F0378D63DE3D2DCC739550669BD46A /* Debug */,
+				372FF5048FF42C3A7A18B70A30D785C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72947DFB8925EF7692EE448CE5CF160F /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Tests" */ = {
+		7D4AB08B80258FFB46CEB37EBF632085 /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D64D0EEE8716DB8B6D408FDD64C3CF8 /* Debug */,
-				D5E0AF088C26FB6A686407F5A59C4C02 /* Release */,
+				92BBFAB93CE53B5AAB263357EFEFC596 /* Debug */,
+				BDEB02A0AF01B82B86232DB8436922E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E1A36E3A1CD14827E0246B5AABEE1B /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Example" */ = {
+		B382A3A292D0B7422CD9458F8B4473E7 /* Build configuration list for PBXNativeTarget "PinAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E0034ACDBDB2711F2ACC17E5B62D589 /* Debug */,
-				E20E01816489E0538DC062FEE01B7260 /* Release */,
+				0CA3F6EE1D112FCAA8F96F2547F28B27 /* Debug */,
+				2C6AF187D4D2A2D3DB52960B73FE0BDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEDC1F2700071A5A82079D9257B54A1B /* Build configuration list for PBXNativeTarget "PinAutoLayout-PinAutoLayout" */ = {
+		CA81FAE18CD09BE299D2529C4EE5BCA8 /* Build configuration list for PBXNativeTarget "Pods-PinAutoLayout_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4FCC880D5176D35B8FE44F35B9A93D4 /* Debug */,
-				C568B1A212F4915499AFFCCE74B13DEB /* Release */,
+				37DC8DD5C264F782AB57461354EE6B86 /* Debug */,
+				A7D0ED967FDC969968856E98A41347E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

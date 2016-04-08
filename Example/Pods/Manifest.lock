@@ -1,5 +1,5 @@
 PODS:
-  - PinAutoLayout (0.1.0)
+  - PinAutoLayout (1.1.0)
 
 DEPENDENCIES:
   - PinAutoLayout (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PinAutoLayout: f1fb2a728c2487e00da02cd587021678b4c2e028
+  PinAutoLayout: f2a278e3c4ef142d985a50ba1417b8ee5d40e04e
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 78f405a04d44bcb74e632b57ee82cccd755ee050
+
+COCOAPODS: 1.0.0.beta.4

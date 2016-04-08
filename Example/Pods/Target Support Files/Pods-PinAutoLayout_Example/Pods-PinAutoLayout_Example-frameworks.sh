@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-PinAutoLayout_Example/PinAutoLayout.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/PinAutoLayout/PinAutoLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-PinAutoLayout_Example/PinAutoLayout.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/PinAutoLayout/PinAutoLayout.framework"
 fi

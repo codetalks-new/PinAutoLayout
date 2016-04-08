@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PinAutoLayout"
-  s.version          = "1.1.0"
+  s.version          = "1.2.0"
   s.summary          = "Easy to use AutoLayout With PinAutoLayout"
 
 # This description is used to generate tags and improve search results.
@@ -35,9 +35,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'PinAutoLayout' => ['Pod/Assets/*.png']
-  }
+  #s.resource_bundles = {
+    #'PinAutoLayout' => ['Pod/Assets/*.png']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
